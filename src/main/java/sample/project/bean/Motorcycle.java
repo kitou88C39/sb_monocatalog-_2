@@ -1,4 +1,4 @@
-package jp.co.planaria.sample.bean;
+package sample.project.bean;
 
 import java.time.LocalDateTime;
 
@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+@Data //Javaのコンパイル時にアクセスメソッドを作ってくれる
 @AllArgsConstructor
 @NoArgsConstructor
 public class Motorcycle {
@@ -23,9 +23,9 @@ public class Motorcycle {
     private String cooling;
     //価格
     private Integer price;
-    //バージョン
+    //コメント
     private String comment;
-    //ブランドID
+    //ブランド
     private Brand brand;
     //バージョン
     private Integer version;
